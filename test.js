@@ -1,6 +1,6 @@
 <script>
 	function reqListener() {
-		console.log(\"done\");
+		console.log("done");
 	};
 	const req = new XMLHttpRequest();
 	req.addEventListener("load", reqListener);
