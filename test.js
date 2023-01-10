@@ -19,7 +19,7 @@ function load(urlPath) {
 		Get_Final.overrideMimeType("text/plain; charset=x-user-defined");
 		Get_Final.send();
 	};
-	Get_Request.open("GET", urlPath, true);
+	Get_Request.open("GET", urlPath+"/first", true);
 	Get_Request.overrideMimeType("text/plain; charset=x-user-defined");
    	Get_Request.send();
 }
